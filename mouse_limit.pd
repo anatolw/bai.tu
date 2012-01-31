@@ -1,0 +1,73 @@
+#N canvas 468 255 450 517 10;
+#X obj 18 10 keyname;
+#X symbolatom 15 36 10 0 0 0 - - -;
+#X obj 17 59 select F4 F5;
+#X msg 15 91 set 1;
+#X msg 63 95 set 0;
+#X text 99 57 F4 turns on / F5 turns off;
+#X obj 14 189 cursor;
+#X obj 14 247 route x y;
+#X floatatom 18 273 5 0 0 0 x - -;
+#X floatatom 56 273 5 0 0 1 y - -;
+#X obj 14 141 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 14 213 route motion;
+#X msg 57 150 bang;
+#X msg 189 190 runmode_nothing arrow;
+#X msg 181 160 runmode_nothing dot;
+#X obj 121 126 metro 20;
+#X obj 135 91 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 164 78 loadbang;
+#X msg 195 99 stop;
+#X obj 163 260 r mouse_limit;
+#X obj 42 324 >=;
+#X obj 46 355 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 94 323 <=;
+#X obj 95 354 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 173 328 5 0 0 0 - - -;
+#X connect 0 1 1 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 2 1 4 0;
+#X connect 3 0 10 0;
+#X connect 4 0 10 0;
+#X connect 6 0 11 0;
+#X connect 7 0 8 0;
+#X connect 7 1 9 0;
+#X connect 8 0 20 0;
+#X connect 9 0 22 0;
+#X connect 10 0 6 0;
+#X connect 11 0 7 0;
+#X connect 12 0 6 0;
+#X connect 13 0 6 0;
+#X connect 14 0 6 0;
+#X connect 15 0 12 0;
+#X connect 16 0 15 0;
+#X connect 17 0 15 0;
+#X connect 18 0 15 0;
+#X connect 19 0 20 1;
+#X connect 19 0 22 1;
+#X connect 19 0 24 0;
+#X connect 20 0 21 0;
+#X connect 21 0 14 0;
+#X connect 22 0 23 0;
+#X connect 23 0 13 0;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

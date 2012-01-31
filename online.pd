@@ -1,0 +1,12 @@
+#N canvas 335 537 248 168 10;
+#X obj -96 59 select 65;
+#X obj -29 59 select 81;
+#X obj -96 28 key;
+#X msg -96 112 \; online1 1;
+#X msg -29 113 \; online1 0;
+#X obj -16 82 loadbang;
+#X connect 0 0 3 0;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 2 0 1 0;
+#X connect 5 0 4 0;

@@ -1,0 +1,24 @@
+#N canvas 0 25 993 656 10;
+#X text 184 -332 comment;
+#X text -32 -280 NB:tempos de fade's têm de ser inseridos nos fader's
+;
+#X text -20 -332 Video Out;
+#X text -14 -483 Load;
+#X text 84 -482 Fade In;
+#X text 184 -483 Fade Out;
+#X obj 3 -464 colour_module 1;
+#X text 100 -439 master fader;
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

@@ -1,0 +1,8 @@
+#N canvas 248 53 1003 755 10;
+#X obj 316 161 video_out;
+#X obj 328 320 facas;
+#X text 245 135 in colour out/ image out/ video out;
+#X text 373 235;
+#X text 117 231 connect facas module to video out;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;

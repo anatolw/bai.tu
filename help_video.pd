@@ -1,0 +1,18 @@
+#N canvas 0 25 1003 656 10;
+#X text 482 207 Fade IN;
+#X text 437 207 Play Stop;
+#X text 537 207 Fade Out;
+#X text 576 215 Search;
+#X text 389 216 Load;
+#X text 384 383 Video Out;
+#X text 481 379 comment;
+#X text 576 380 comment;
+#X obj 399 236 vid_module 1;
+#X floatatom 757 185 5 0 0 0 - - -;
+#X obj 676 219 f;
+#X obj 635 179 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 750 166 Frames;
+#X connect 9 0 10 1;
+#X connect 10 0 8 4;
+#X connect 11 0 10 0;

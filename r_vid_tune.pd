@@ -1,0 +1,143 @@
+#N canvas 1280 155 993 594 10;
+#X obj 106 88 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 453 417 disconnect;
+#X obj 16 499 netsend;
+#X obj 16 -67 inlet conn;
+#X obj 171 -168 netreceive 3333;
+#X floatatom 180 88 5 0 0 0 - - -;
+#X floatatom 126 88 5 0 0 0 - - -;
+#X obj 454 393 delay 200;
+#X text 102 70 CONNECTION;
+#X text 179 69 RETURN;
+#X obj 142 249 hsl 128 15 0 1200 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 2300 1;
+#X obj 107 112 vsl 15 128 0 800 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 2064 1;
+#X floatatom 148 154 5 0 0 0 - - -;
+#X floatatom 189 154 5 0 0 0 - - -;
+#X floatatom 233 152 5 0 0 0 - - -;
+#X floatatom 144 213 5 0 0 0 - - -;
+#X floatatom 185 213 5 0 0 0 - - -;
+#X floatatom 261 86 2 1 16 2 out - -;
+#X text 179 121 POSITION;
+#X text 157 134 X;
+#X text 198 134 Y;
+#X text 244 134 Z;
+#X text 177 182 KEYSTONE;
+#X text 150 194 X;
+#X text 197 194 Y;
+#X obj 139 271 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 159 269 Start remote GEM;
+#X obj 139 290 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 162 287 Stop remote GEM;
+#X text 105 248 SIZE;
+#X obj 513 -64 print vid_rec;
+#X floatatom 230 213 5 0 0 0 - - -;
+#X text 242 194 Z;
+#X text 321 100 run cmd's: 5 - disconnects (first the return and then
+the connection) 1 - starts GEM 0 - shuts down GEM 4 - sets GEM to windowed
+mode (do not use unless you have vinagre access) 3 - set GEM to non
+windowed mode 2 - activate foldback connection 6 - return values for
+specific video_out;
+#X obj 240 87 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 425 193 i;
+#X msg 78 451 send run \$1 6;
+#X msg 453 320 send run 0 1;
+#X msg 453 344 send run 0 0;
+#X msg 454 370 send run 0 5;
+#X obj 159 555 print control_out;
+#X obj 90 384 video_mux;
+#X obj 315 498 bng 15 250 50 0 wi empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 390 498 delay 100;
+#X obj 325 191 delay 500;
+#X text 747 176 comment;
+#X obj 105 22 is_equal_i;
+#X obj 172 22 is_equal_i;
+#X obj 239 21 is_equal_i;
+#X obj 306 20 is_equal_i;
+#X obj 374 19 is_equal_i;
+#X obj 442 18 is_equal_i;
+#X obj 510 18 is_equal_i;
+#X obj 577 18 is_equal_i;
+#X obj 115 -73 video_demux;
+#X connect 0 0 39 0;
+#X connect 0 0 7 0;
+#X connect 1 0 2 0;
+#X connect 2 0 6 0;
+#X connect 3 0 2 0;
+#X connect 4 0 30 0;
+#X connect 4 0 54 0;
+#X connect 4 1 5 0;
+#X connect 7 0 1 0;
+#X connect 10 0 41 1;
+#X connect 10 0 47 1;
+#X connect 11 0 41 0;
+#X connect 11 0 46 1;
+#X connect 12 0 41 2;
+#X connect 12 0 48 1;
+#X connect 13 0 41 3;
+#X connect 13 0 49 1;
+#X connect 14 0 41 4;
+#X connect 14 0 50 1;
+#X connect 15 0 41 5;
+#X connect 15 0 51 1;
+#X connect 16 0 41 6;
+#X connect 16 0 52 1;
+#X connect 17 0 35 1;
+#X connect 25 0 37 0;
+#X connect 27 0 38 0;
+#X connect 31 0 41 7;
+#X connect 31 0 53 1;
+#X connect 34 0 35 0;
+#X connect 34 0 44 0;
+#X connect 35 0 36 0;
+#X connect 35 0 41 8;
+#X connect 35 0 54 1;
+#X connect 36 0 2 0;
+#X connect 37 0 2 0;
+#X connect 38 0 2 0;
+#X connect 39 0 2 0;
+#X connect 41 0 2 0;
+#X connect 41 0 40 0;
+#X connect 41 0 42 0;
+#X connect 42 0 43 0;
+#X connect 43 0 34 0;
+#X connect 44 0 35 0;
+#X connect 46 1 11 0;
+#X connect 47 1 10 0;
+#X connect 48 1 12 0;
+#X connect 49 1 13 0;
+#X connect 50 1 14 0;
+#X connect 51 1 15 0;
+#X connect 52 1 16 0;
+#X connect 53 1 31 0;
+#X connect 54 0 46 0;
+#X connect 54 1 47 0;
+#X connect 54 2 48 0;
+#X connect 54 3 49 0;
+#X connect 54 4 50 0;
+#X connect 54 5 51 0;
+#X connect 54 6 52 0;
+#X connect 54 7 53 0;
+#X coords 0 -1 1 1 180 260 1 100 50;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

@@ -1,0 +1,75 @@
+#modules included in this distribution and the descriptions
+
+copyright (C)2009 Anatol Waschke
+
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;
+
+
+cmd_split.pd		-> splits messages into floats
+colour_connector.pd	-> include this in your patch to control colour_modules remotely
+colour_demux.pd		-> receives messages and splits them into floats for remote colour control
+colour_module.pd	-> plain colour w/ fade for video objects
+colour_mux.pd		-> the reverse process of colour_demux.pd
+doc.pd
+faca_connector.pd	-> include this in your patch to control Faca.pd modules remotely
+faca_demux.pd		-> receives messages and splits them into floats for remote control
+faca_mux.pd		-> the reverse process of faca_demux
+Faca.pd			-> a static rectangle to correct borders
+facas.pd		-> contains Faca 1 to 4 to make a nice frame
+fade_module.pd		-> controls fade in/out for snd_module but works for colour and image as well
+gem_auto.pd		-> starts and sets the render of your computers video output
+				(do not confuse with video objects, these work within the gem)
+gem_auto_setup.pd	-> controls gem_auto.pd and stores variables automaticly
+img_module.pd		-> image control for video objects (fade in/out + colour control)
+is_equal_i.pd		-> compares two integers and routes them accordingly
+is_equal.pd		-> compares two floats and routes them accordingly
+level.pd		-> simple level change module (tested for audio only)
+leveltest.pd		-> a sample and testing patch for level.pd
+mov_demux.pd		-> message splitting for move.pd
+move.pd			-> moves video objects on cue
+mov_mux.pd		-> message merging for move.pd
+nfader1.pd		-> a fader-float combination (values from 0 to 15000) for fading times
+patch.pd		-> a sample patch with most modules and functions included
+r_colour.pd		-> remote control for colour_module
+r_cue_in.pd		-> receives up to 20 cues from a remote master and converts them into bangs
+r_cue_out.pd		-> receives [#( messages and sends them to a remote r_cue_in (da master)
+remote_conn.pd		-> you may have the connectors in a different patch to save space
+remote_control.pd	-> an example for the use of r_cue_out
+remote_control_test.pd	-> an example for the use of remote control for Faca, colour_module and video objects
+remote_in.pd		-> this how you might use r_cue_in
+r_facas.pd		-> remote control module for Faca (used in remote_control_test.pd)
+r_facas_test.pd		-> a sample for the use of just just r_facas
+r_video_test.pd		-> sample use of r_vid_tune
+r_vid_tune.pd		-> remote control for video objects
+sequence.pd		-> a simple sequencer (runs thru cues and converts them into bangs)
+sequence_sync.pd	-> the same thing as sequence.pd but able to syncronize up to +100 computers
+			(depending on the speed of your network maybe much over that)
+snd_module.pd		-> plays *.wav files with level control
+usb_cam_module.pd	-> takes your webcam or similar and streams it to a video object
+v_cmd_split.pd		-> receives messages and splits them for remote video object control (obsolete)
+video_circle.pd		-> a video object in the shape of a .....     circle!!!
+video_cube.pd		-> a video object wich is a, guess what, a cube
+video_demux.pd		-> unmerges messages for remote vido object control
+video_mux.pd		-> merges floats into messages for remote video object control
+video_out.pd		-> a simple video object wich is a rectangle
+video_sphere.pd		-> video object in the shape of a sphere
+vid_module.pd		-> streams local video files into video objects (depends on your systems codecs)
+vid_tune_connector.pd	-> include this somewhere in your patch to gain remote control of your video objects
+bai.version		-> on loading outputs a message containing the actual version of bai.tu
+
+
+
+

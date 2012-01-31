@@ -1,0 +1,10 @@
+#N canvas 467 167 842 509 10;
+#X obj 92 251 video_out 1;
+#X obj 378 73 usb_cam_module 1;
+#X obj 345 33 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 446 23 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 1 0 0 0;
+#X connect 2 0 1 0;
+#X connect 3 0 1 1;

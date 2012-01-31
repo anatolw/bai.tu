@@ -1,0 +1,30 @@
+#N canvas 318 295 450 300 10;
+#X obj 58 131 r_cue_out;
+#X msg 252 48 1;
+#X msg 298 45 2;
+#X msg 365 44 3;
+#X msg 407 48 4;
+#X msg 410 125 5;
+#X msg 52 39 connect 10.10.10.47 3000;
+#X connect 1 0 0 1;
+#X connect 2 0 0 1;
+#X connect 3 0 0 1;
+#X connect 4 0 0 1;
+#X connect 5 0 0 1;
+#X connect 6 0 0 0;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

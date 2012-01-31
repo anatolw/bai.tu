@@ -1,0 +1,53 @@
+#N canvas 320 419 774 448 10;
+#X floatatom 196 31 5 0 0 0 - - -;
+#X obj 495 239 netsend;
+#X obj 509 57 loadbang;
+#X obj 509 87 symbol \$1;
+#X msg 507 171 connect localhost 3600;
+#X obj 441 87 select 1;
+#X obj 441 111 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 442 132 delay 200;
+#X obj 310 147 select 0 1 2 3 4 5;
+#X msg 386 201 disconnect;
+#X floatatom 250 30 5 0 0 0 - - -;
+#X obj 92 361 s colour_receive;
+#X obj 165 323 print colour_conn_rec;
+#X obj 293 116 r colour_cmd;
+#X obj 546 196 r colour_send;
+#X msg 514 131 set connect \$1 3600;
+#X obj 129 286 netreceive 3602;
+#X connect 0 0 5 0;
+#X connect 1 0 10 0;
+#X connect 2 0 3 0;
+#X connect 3 0 15 0;
+#X connect 4 0 1 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 4 0;
+#X connect 8 0 9 0;
+#X connect 8 1 4 0;
+#X connect 9 0 1 0;
+#X connect 13 0 8 0;
+#X connect 14 0 1 0;
+#X connect 15 0 4 0;
+#X connect 16 0 11 0;
+#X connect 16 0 12 0;
+#X connect 16 1 0 0;
+#X coords 0 -1 1 1 150 60 1 180 1;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

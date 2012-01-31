@@ -1,0 +1,25 @@
+#N canvas 477 488 450 300 10;
+#X obj 56 53 r spath;
+#X obj 77 172 pack s s f;
+#X obj 246 94 inlet;
+#X obj 112 53 loadbang;
+#X obj 115 107 symbol \$1;
+#X obj 130 79 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 77 256 read /home/anatol/Desktop/pd-test/video_out1.auto;
+#X msg 76 210 set read \$1\$2\$3.auto;
+#X obj 26 251 outlet;
+#X obj 57 143 symbol;
+#X obj 23 90 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X connect 0 0 9 1;
+#X connect 0 0 10 0;
+#X connect 1 0 7 0;
+#X connect 2 0 1 2;
+#X connect 3 0 4 0;
+#X connect 4 0 1 1;
+#X connect 5 0 4 0;
+#X connect 7 0 6 0;
+#X connect 7 0 8 0;
+#X connect 9 0 1 0;
+#X connect 10 0 9 0;

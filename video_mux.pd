@@ -1,0 +1,151 @@
+#N canvas 293 210 649 449 10;
+#X obj 64 72 inlet;
+#X obj 134 72 inlet;
+#X obj 206 73 inlet;
+#X obj 277 73 inlet;
+#X obj 345 73 inlet;
+#X obj 409 74 inlet;
+#X obj 476 74 inlet;
+#X obj 544 74 inlet;
+#X obj 614 73 inlet;
+#X obj 80 512 outlet;
+#X text 76 49 hi;
+#X text 118 49 wi;
+#X text 147 49 xpos;
+#X text 195 49 ypos;
+#X text 230 49 zpos;
+#X text 273 49 xkey;
+#X text 319 49 ykey;
+#X text 355 49 zkey;
+#X text 611 56 number;
+#X obj 59 311 pack f f;
+#X msg 57 341 send hi \$1 \$2;
+#X obj 105 372 pack f f;
+#X msg 104 399 send wi \$1 \$2;
+#X obj 164 311 pack f f;
+#X msg 160 341 send xpos \$1 \$2;
+#X obj 218 374 pack f f;
+#X obj 272 307 pack f f;
+#X msg 216 404 send ypos \$1 \$2;
+#X msg 270 337 send zpos \$1 \$2;
+#X obj 341 369 pack f f;
+#X msg 339 399 send xkey \$1 \$2;
+#X obj 415 314 pack f f;
+#X msg 413 344 send ykey \$1 \$2;
+#X obj 451 391 pack f f;
+#X msg 449 421 send zkey \$1 \$2;
+#X obj 63 159 i;
+#X obj 63 134 delay 1;
+#X obj 63 111 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 133 165 i;
+#X obj 133 140 delay 1;
+#X obj 133 117 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 205 168 i;
+#X obj 205 143 delay 1;
+#X obj 205 120 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 276 171 i;
+#X obj 276 146 delay 1;
+#X obj 276 123 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 347 169 i;
+#X obj 347 144 delay 1;
+#X obj 347 121 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 400 160 i;
+#X obj 400 135 delay 1;
+#X obj 400 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 489 210 i;
+#X obj 489 185 delay 1;
+#X obj 489 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 559 249 i;
+#X obj 559 224 delay 1;
+#X obj 559 201 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 578 41 5 0 0 0 - - -;
+#X connect 0 0 19 1;
+#X connect 0 0 37 0;
+#X connect 1 0 21 1;
+#X connect 1 0 40 0;
+#X connect 2 0 23 1;
+#X connect 2 0 43 0;
+#X connect 3 0 25 1;
+#X connect 3 0 46 0;
+#X connect 4 0 26 1;
+#X connect 4 0 49 0;
+#X connect 5 0 29 1;
+#X connect 5 0 52 0;
+#X connect 6 0 31 1;
+#X connect 6 0 55 0;
+#X connect 7 0 33 1;
+#X connect 7 0 58 0;
+#X connect 8 0 35 1;
+#X connect 8 0 38 1;
+#X connect 8 0 41 1;
+#X connect 8 0 44 1;
+#X connect 8 0 47 1;
+#X connect 8 0 50 1;
+#X connect 8 0 53 1;
+#X connect 8 0 56 1;
+#X connect 8 0 59 0;
+#X connect 19 0 20 0;
+#X connect 20 0 9 0;
+#X connect 21 0 22 0;
+#X connect 22 0 9 0;
+#X connect 23 0 24 0;
+#X connect 24 0 9 0;
+#X connect 25 0 27 0;
+#X connect 26 0 28 0;
+#X connect 27 0 9 0;
+#X connect 28 0 9 0;
+#X connect 29 0 30 0;
+#X connect 30 0 9 0;
+#X connect 31 0 32 0;
+#X connect 32 0 9 0;
+#X connect 33 0 34 0;
+#X connect 34 0 9 0;
+#X connect 35 0 19 0;
+#X connect 36 0 35 0;
+#X connect 37 0 36 0;
+#X connect 38 0 21 0;
+#X connect 39 0 38 0;
+#X connect 40 0 39 0;
+#X connect 41 0 23 0;
+#X connect 42 0 41 0;
+#X connect 43 0 42 0;
+#X connect 44 0 25 0;
+#X connect 45 0 44 0;
+#X connect 46 0 45 0;
+#X connect 47 0 26 0;
+#X connect 48 0 47 0;
+#X connect 49 0 48 0;
+#X connect 50 0 29 0;
+#X connect 51 0 50 0;
+#X connect 52 0 51 0;
+#X connect 53 0 31 0;
+#X connect 54 0 53 0;
+#X connect 55 0 54 0;
+#X connect 56 0 33 0;
+#X connect 57 0 56 0;
+#X connect 58 0 57 0;
+#X coords 0 -1 1 1 350 30 1 60 35;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

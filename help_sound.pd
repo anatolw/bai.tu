@@ -1,0 +1,13 @@
+#N canvas 0 25 1024 660 10;
+#X obj 164 382 snd_module 1;
+#X obj 302 143 fade_module 1;
+#X text 402 330;
+#X text 426 123 cue fade out;
+#X text 283 125 cue fade in;
+#X text 279 306 connect fade in;
+#X text 343 352 connect fade out;
+#X text 320 390 peak limiter;
+#X text 247 400 play;
+#X text 151 365 cue play;
+#X connect 1 0 0 1;
+#X connect 1 1 0 2;

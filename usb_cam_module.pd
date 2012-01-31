@@ -1,0 +1,54 @@
+#N canvas 398 410 727 473 10;
+#X obj 68 32 gemhead 60;
+#X msg 118 67 dimen 352 288;
+#X obj 73 160 pix_video;
+#X obj 75 206 pix_texture;
+#X obj 77 279 colorRGB;
+#X obj 76 244 alpha;
+#X obj 236 175 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 12700 1;
+#X obj 241 144 line;
+#X obj 381 -4 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 403 -119 vsl 15 128 0 15000 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 8100 1;
+#X msg 404 73 set 0 \$1;
+#X msg 404 101 0 9566;
+#X obj 405 37 int;
+#X obj 289 -4 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 311 -119 vsl 15 128 0 15000 0 0 empty empty empty 0 -9 0 10
+-262144 -1 -1 3600 1;
+#X msg 312 101 1 4251;
+#X obj 313 37 int;
+#X msg 318 63 set 1 \$1;
+#X obj 80 322 outlet;
+#X obj 125 -47 inlet;
+#X obj 227 -46 inlet;
+#X obj 189 18 loadbang;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+#X msg 210 232 device /dev/video0 driver zc3xx;
+#X connect 0 0 2 0;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 18 0;
+#X connect 5 0 4 0;
+#X connect 6 0 4 4;
+#X connect 7 0 6 0;
+#X connect 8 0 11 0;
+#X connect 9 0 12 0;
+#X connect 10 0 11 0;
+#X connect 11 0 7 0;
+#X connect 12 0 10 0;
+#X connect 13 0 15 0;
+#X connect 14 0 16 0;
+#X connect 15 0 7 0;
+#X connect 16 0 17 0;
+#X connect 17 0 15 0;
+#X connect 19 0 13 0;
+#X connect 20 0 8 0;
+#X connect 21 0 1 0;
+#X connect 21 0 24 0;
+#X connect 24 0 2 0;

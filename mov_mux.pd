@@ -1,0 +1,80 @@
+#N canvas 344 205 594 442 10;
+#X obj 83 55 inlet;
+#X obj 377 58 inlet;
+#X obj 132 336 outlet;
+#X obj 84 82 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 154 56 inlet;
+#X obj 155 83 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 220 56 inlet;
+#X obj 221 83 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 274 110 delay 10;
+#X msg 87 234 set X \$1 \$2;
+#X msg 166 263 set Y \$1 \$2;
+#X msg 250 234 set Z \$1 \$2;
+#X msg 87 262 X 0 0;
+#X msg 164 290 Y 0 0;
+#X msg 251 263 Z 0 0;
+#X obj 37 323 delay 10;
+#X obj 39 360 delay 10;
+#X obj 32 251 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X floatatom 75 144 5 0 0 0 - - -;
+#X floatatom 141 137 5 0 0 0 - - -;
+#X floatatom 210 137 5 0 0 0 - - -;
+#X floatatom 351 193 5 0 0 0 - - -;
+#X obj 108 207 pack f f;
+#X obj 179 208 pack f f;
+#X obj 245 208 pack f f;
+#X obj 309 140 f;
+#X connect 0 0 3 0;
+#X connect 0 0 18 0;
+#X connect 0 0 22 1;
+#X connect 1 0 25 1;
+#X connect 3 0 8 0;
+#X connect 4 0 5 0;
+#X connect 4 0 19 0;
+#X connect 4 0 23 1;
+#X connect 5 0 8 0;
+#X connect 6 0 7 0;
+#X connect 6 0 20 0;
+#X connect 6 0 24 1;
+#X connect 7 0 8 0;
+#X connect 8 0 25 0;
+#X connect 9 0 12 0;
+#X connect 9 0 17 0;
+#X connect 10 0 13 0;
+#X connect 11 0 14 0;
+#X connect 12 0 2 0;
+#X connect 13 0 2 0;
+#X connect 14 0 2 0;
+#X connect 15 0 16 0;
+#X connect 15 0 14 0;
+#X connect 16 0 13 0;
+#X connect 17 0 12 0;
+#X connect 17 0 15 0;
+#X connect 22 0 9 0;
+#X connect 23 0 10 0;
+#X connect 24 0 11 0;
+#X connect 25 0 21 0;
+#X connect 25 0 22 0;
+#X connect 25 0 23 0;
+#X connect 25 0 24 0;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

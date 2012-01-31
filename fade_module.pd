@@ -1,0 +1,137 @@
+#N canvas 36 378 898 512 10;
+#X obj -18 168 line;
+#X msg -50 124 0 6666;
+#X obj -132 116 vsl 15 90 0 1 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 8900 1;
+#X obj -111 261 *;
+#X obj -48 230 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -266 194 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj -311 304 outlet;
+#X msg 29 128 1 4554;
+#X obj -270 123 vsl 15 64 0 15000 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 1913 1;
+#X obj -199 124 vsl 15 64 0 15000 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 2800 1;
+#X obj -53 69 int;
+#X floatatom -174 170 5 0 0 0 - - -;
+#X msg -53 97 set 0 \$1;
+#X obj -175 122 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -129 10 inlet;
+#X obj 29 66 int;
+#X msg 29 94 set 1 \$1;
+#X floatatom -243 171 5 0 0 0 - - -;
+#X obj -248 121 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -204 19 inlet;
+#X text -254 154 FADE IN;
+#X text -184 154 FADE OUT;
+#X text -148 98 Level;
+#X obj -204 52 r nulmem;
+#X obj -205 77 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 222 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 426 69 loadbang;
+#X obj 425 94 float \$1;
+#X msg 215 381 write fade0.auto;
+#X obj 318 188 textfile;
+#X msg 324 142 read fade0.auto;
+#X obj 212 440 print;
+#X obj 251 358 delay 100;
+#X obj 358 213 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 343 247 print list;
+#X obj 213 153 print;
+#X msg 195 97 print;
+#X obj 158 99 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X msg 241 63 rewind;
+#X obj 351 22 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 309 61 delay 1;
+#X obj 131 429 textfile;
+#X obj 264 17 delay 1;
+#X obj 182 45 delay 1;
+#X obj 422 29 delay 500;
+#X obj 50 266 pack \$1 \$2 \$3;
+#X obj 140 197 unpack \$1 \$2 \$3;
+#X msg 64 345 set \$1 \$2 \$3;
+#X obj -9 275 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj -207 370 outlet;
+#X obj -202 337 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj -199 304 delay 0;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+#X obj 279 314 set_comp_write fade;
+#X obj 323 117 set_comp_read fade;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 1;
+#X connect 2 0 4 0;
+#X connect 2 0 45 2;
+#X connect 2 0 48 0;
+#X connect 3 0 5 0;
+#X connect 4 0 3 0;
+#X connect 5 0 6 0;
+#X connect 7 0 0 0;
+#X connect 8 0 48 0;
+#X connect 8 0 15 0;
+#X connect 9 0 48 0;
+#X connect 9 0 10 0;
+#X connect 10 0 12 0;
+#X connect 10 0 11 0;
+#X connect 11 0 45 1;
+#X connect 11 0 51 1;
+#X connect 12 0 1 0;
+#X connect 13 0 1 0;
+#X connect 13 0 51 0;
+#X connect 14 0 13 0;
+#X connect 15 0 16 0;
+#X connect 15 0 17 0;
+#X connect 16 0 7 0;
+#X connect 17 0 45 0;
+#X connect 18 0 7 0;
+#X connect 19 0 18 0;
+#X connect 23 0 24 0;
+#X connect 24 0 13 0;
+#X connect 25 0 32 0;
+#X connect 26 0 27 0;
+#X connect 26 0 39 0;
+#X connect 26 0 44 0;
+#X connect 27 0 54 0;
+#X connect 27 0 55 0;
+#X connect 28 0 31 0;
+#X connect 28 0 41 0;
+#X connect 29 0 34 0;
+#X connect 29 0 46 0;
+#X connect 29 1 33 0;
+#X connect 30 0 29 0;
+#X connect 30 0 35 0;
+#X connect 32 0 28 0;
+#X connect 36 0 29 0;
+#X connect 37 0 29 0;
+#X connect 38 0 29 0;
+#X connect 39 0 40 0;
+#X connect 40 0 30 0;
+#X connect 40 0 42 0;
+#X connect 42 0 38 0;
+#X connect 42 0 43 0;
+#X connect 43 0 37 0;
+#X connect 44 0 39 0;
+#X connect 45 0 25 0;
+#X connect 45 0 47 0;
+#X connect 46 0 8 0;
+#X connect 46 1 9 0;
+#X connect 46 2 2 0;
+#X connect 47 0 41 0;
+#X connect 48 0 45 0;
+#X connect 50 0 49 0;
+#X connect 51 0 50 0;
+#X connect 54 0 28 0;
+#X connect 55 0 30 0;
+#X coords 0 -1 1 1 163 117 1 -275 99;

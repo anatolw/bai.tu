@@ -1,0 +1,187 @@
+#N canvas 36 95 965 668 10;
+#X floatatom 442 118 1 0 0 0 - - -;
+#X obj 416 154 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -258113
+-1 -1 0 1;
+#X obj 441 154 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -4034
+-1 -1 5900 1;
+#X obj 465 154 vsl 15 128 0 1 0 0 empty empty empty 0 -9 0 10 -4160
+-1 -1 2506 1;
+#X obj 135 154 is_equal;
+#X floatatom 643 123 5 0 0 0 - - -;
+#X obj 702 333 f;
+#X obj 621 125 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 22 173 inlet;
+#X obj 271 429 netsend;
+#X floatatom 431 118 1 0 0 0 - - -;
+#X obj 412 119 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 233 312 disconnect;
+#X obj 291 269 delay 100;
+#X msg 673 407 send cmd \$1 10;
+#X obj 457 119 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 271 347 send cmd \$1 1;
+#X msg 183 272 send cmd \$1 0;
+#X obj 127 92 colour_demux;
+#X obj 202 12 netreceive 3600;
+#X obj 442 560 colour_mux;
+#X obj 306 512 print colour send;
+#X obj 199 62 print color_received;
+#X obj 489 147 nfader1;
+#X obj 559 147 nfader1;
+#X obj 789 647 bng 15 250 50 0 colb empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 848 371 delay 100;
+#X obj 395 387 f;
+#X obj 394 362 delay 10;
+#X obj 394 340 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 437 444 f;
+#X obj 436 419 delay 10;
+#X obj 436 397 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 471 388 f;
+#X obj 470 363 delay 10;
+#X obj 470 341 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 530 394 f;
+#X obj 529 369 delay 10;
+#X obj 529 347 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 565 455 f;
+#X obj 564 430 delay 10;
+#X obj 564 408 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 771 91 loadbang;
+#X msg 771 152 50;
+#X obj 134 179 is_equal;
+#X obj 134 204 is_equal;
+#X obj 198 153 is_equal;
+#X obj 197 180 is_equal;
+#X obj 66 355 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 66 396 f;
+#X obj 65 419 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 65 460 f;
+#X obj 66 490 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 66 531 f;
+#X obj 67 557 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 67 598 f;
+#X obj 171 556 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 171 597 f;
+#X obj 66 374 delay 50;
+#X obj 65 438 delay 50;
+#X obj 66 509 delay 50;
+#X obj 67 576 delay 50;
+#X obj 171 575 delay 50;
+#X connect 1 0 4 1;
+#X connect 1 0 29 0;
+#X connect 1 0 27 1;
+#X connect 2 0 32 0;
+#X connect 2 0 30 1;
+#X connect 2 0 44 1;
+#X connect 3 0 35 0;
+#X connect 3 0 33 1;
+#X connect 3 0 45 1;
+#X connect 4 1 48 0;
+#X connect 4 1 49 1;
+#X connect 5 0 6 1;
+#X connect 6 0 18 1;
+#X connect 6 0 20 5;
+#X connect 6 0 14 0;
+#X connect 7 0 6 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 11 0 13 0;
+#X connect 11 0 17 0;
+#X connect 12 0 9 0;
+#X connect 13 0 12 0;
+#X connect 14 0 9 0;
+#X connect 15 0 16 0;
+#X connect 16 0 9 0;
+#X connect 17 0 9 0;
+#X connect 18 0 4 0;
+#X connect 18 1 44 0;
+#X connect 18 2 45 0;
+#X connect 18 3 46 0;
+#X connect 18 4 47 0;
+#X connect 19 0 18 0;
+#X connect 19 0 22 0;
+#X connect 19 1 0 0;
+#X connect 20 0 9 0;
+#X connect 20 0 21 0;
+#X connect 20 0 25 0;
+#X connect 23 0 38 0;
+#X connect 23 0 36 1;
+#X connect 23 0 46 1;
+#X connect 24 0 41 0;
+#X connect 24 0 39 1;
+#X connect 24 0 47 1;
+#X connect 25 0 26 0;
+#X connect 26 0 7 0;
+#X connect 27 0 20 0;
+#X connect 28 0 27 0;
+#X connect 29 0 28 0;
+#X connect 30 0 20 1;
+#X connect 31 0 30 0;
+#X connect 32 0 31 0;
+#X connect 33 0 20 2;
+#X connect 34 0 33 0;
+#X connect 35 0 34 0;
+#X connect 36 0 20 3;
+#X connect 37 0 36 0;
+#X connect 38 0 37 0;
+#X connect 39 0 20 4;
+#X connect 40 0 39 0;
+#X connect 41 0 40 0;
+#X connect 42 0 43 0;
+#X connect 43 0 28 1;
+#X connect 43 0 34 1;
+#X connect 43 0 37 1;
+#X connect 43 0 31 1;
+#X connect 43 0 40 1;
+#X connect 44 1 50 0;
+#X connect 44 1 51 1;
+#X connect 45 1 52 0;
+#X connect 45 1 53 1;
+#X connect 46 1 54 0;
+#X connect 46 1 55 1;
+#X connect 47 1 56 0;
+#X connect 47 1 57 1;
+#X connect 48 0 58 0;
+#X connect 49 0 1 0;
+#X connect 50 0 59 0;
+#X connect 51 0 2 0;
+#X connect 52 0 60 0;
+#X connect 53 0 3 0;
+#X connect 54 0 61 0;
+#X connect 55 0 23 0;
+#X connect 56 0 62 0;
+#X connect 57 0 24 0;
+#X connect 58 0 49 0;
+#X connect 59 0 51 0;
+#X connect 60 0 53 0;
+#X connect 61 0 55 0;
+#X connect 62 0 57 0;
+#X coords 0 -1 1 1 280 220 1 400 80;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

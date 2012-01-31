@@ -1,0 +1,10 @@
+#N canvas 0 25 993 656 10;
+#X obj -1 -463 img_module 1;
+#X text 78 -331 comment;
+#X text 184 -332 comment;
+#X text -32 -280 NB:tempos de fade's têm de ser inseridos nos fader's
+;
+#X text -20 -332 Video Out;
+#X text -14 -483 Load;
+#X text 89 -491 Fade In;
+#X text 190 -492 Fade Out;

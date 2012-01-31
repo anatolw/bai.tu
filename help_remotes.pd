@@ -1,0 +1,16 @@
+#N canvas 0 25 1280 916 10;
+#X obj 12 53 faca_connector 192.168.0.7;
+#X obj -505 65 vid_tune_connector 192.168.0.7;
+#X text -281 26 NB: Estes modulos têm de existir no computador que
+lê os vídeos;
+#X obj -461 319 r_vid_tune;
+#X obj -46 316 r_facas;
+#X msg -32 259 connect 192.168.0.7 3200;
+#X text -280 226 NB: Estes modulos têm de existir no computador remoto
+;
+#X text -30 295;
+#X msg -448 265 connect 192.168.0.7 3032;
+#X text -265 276 Atenção à porta e IP do PC dos vídeos;
+#X text 84 277;
+#X connect 5 0 4 0;
+#X connect 8 0 3 0;

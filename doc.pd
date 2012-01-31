@@ -1,0 +1,21 @@
+#N canvas 92 111 956 620 10;
+#X obj 72 77 colour_module X;
+#X text 30 50 bang for FADE IN;
+#X text 230 49 bang for FADE OUT;
+#X text 307 79 indicate a id as parameter;
+#X text 32 213 video out connector;
+#X text 258 214 fader link;
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

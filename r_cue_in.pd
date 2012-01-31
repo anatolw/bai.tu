@@ -1,0 +1,147 @@
+#N canvas 205 212 800 424 10;
+#X obj 47 94 select 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19
+20;
+#X obj 40 158 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 56 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 73 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 90 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 107 157 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 124 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 142 156 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 159 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 177 154 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 195 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 212 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 230 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 301 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 248 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 319 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 266 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 336 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 283 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 354 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 373 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 392 155 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 120 71 s r_cue_in;
+#X obj -7 225 outlet;
+#X obj 14 246 outlet;
+#X obj 38 225 outlet;
+#X obj 59 246 outlet;
+#X obj 81 225 outlet;
+#X obj 102 246 outlet;
+#X obj 126 225 outlet;
+#X obj 147 246 outlet;
+#X obj 169 225 outlet;
+#X obj 190 246 outlet;
+#X obj 214 225 outlet;
+#X obj 235 246 outlet;
+#X obj 257 225 outlet;
+#X obj 278 246 outlet;
+#X obj 302 225 outlet;
+#X obj 323 246 outlet;
+#X obj 436 225 outlet;
+#X obj 347 225 outlet;
+#X obj 368 246 outlet;
+#X obj 392 225 outlet;
+#X obj 413 246 outlet;
+#X floatatom 250 126 5 0 0 0 - - -;
+#X text 168 124 connections;
+#X obj 157 276 print receiving \$1;
+#X obj 30 38 unpack s f;
+#X obj 460 194 outlet;
+#X obj 101 0 netreceive 3001;
+#X obj 246 20 select 0;
+#X obj 273 57 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 331 50 s nulmem;
+#X connect 0 0 1 0;
+#X connect 0 1 2 0;
+#X connect 0 2 3 0;
+#X connect 0 3 4 0;
+#X connect 0 4 5 0;
+#X connect 0 5 6 0;
+#X connect 0 6 7 0;
+#X connect 0 7 8 0;
+#X connect 0 8 9 0;
+#X connect 0 9 10 0;
+#X connect 0 10 11 0;
+#X connect 0 11 12 0;
+#X connect 0 12 14 0;
+#X connect 0 13 16 0;
+#X connect 0 14 18 0;
+#X connect 0 15 13 0;
+#X connect 0 16 15 0;
+#X connect 0 17 17 0;
+#X connect 0 18 19 0;
+#X connect 0 19 20 0;
+#X connect 0 20 21 0;
+#X connect 1 0 23 0;
+#X connect 2 0 24 0;
+#X connect 3 0 25 0;
+#X connect 4 0 26 0;
+#X connect 5 0 27 0;
+#X connect 6 0 28 0;
+#X connect 7 0 29 0;
+#X connect 8 0 30 0;
+#X connect 9 0 31 0;
+#X connect 10 0 32 0;
+#X connect 11 0 33 0;
+#X connect 12 0 34 0;
+#X connect 13 0 38 0;
+#X connect 14 0 35 0;
+#X connect 15 0 40 0;
+#X connect 16 0 36 0;
+#X connect 17 0 41 0;
+#X connect 18 0 37 0;
+#X connect 19 0 42 0;
+#X connect 20 0 43 0;
+#X connect 21 0 39 0;
+#X connect 47 0 46 0;
+#X connect 47 1 0 0;
+#X connect 47 1 46 0;
+#X connect 47 1 50 0;
+#X connect 49 0 22 0;
+#X connect 49 0 46 0;
+#X connect 49 0 47 0;
+#X connect 49 0 48 0;
+#X connect 49 1 44 0;
+#X connect 50 0 51 0;
+#X connect 51 0 52 0;
+#X coords 0 -1 1 1 300 60 1 100 100;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;

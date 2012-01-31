@@ -1,0 +1,50 @@
+#N canvas 456 279 450 300 10;
+#X obj 209 105 is_equal;
+#X obj 104 55 vsl 15 128 0 15000 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 4541 1;
+#X floatatom 124 168 6 0 0 2 ms - -;
+#X obj 161 19 inlet;
+#X obj 176 245 outlet;
+#X obj 238 157 f;
+#X obj 275 133 delay 1;
+#X obj 328 36 loadbang;
+#X obj 327 74 metro 10;
+#X obj 372 104 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 402 38 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 273 112 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X msg 330 105 1;
+#X connect 0 1 5 1;
+#X connect 0 1 11 0;
+#X connect 1 0 2 0;
+#X connect 1 0 0 1;
+#X connect 1 0 4 0;
+#X connect 2 0 0 0;
+#X connect 3 0 1 0;
+#X connect 5 0 1 0;
+#X connect 6 0 5 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 8 0 12 0;
+#X connect 10 0 8 0;
+#X connect 11 0 6 0;
+#X connect 12 0 6 1;
+#X coords 0 -1 1 1 65 140 2 100 50;
+#X text 1 1 copyright (C) 2009 Anatol Waschke;
+#X text 1 13 distributed under GPL (see doc/COPYING);
+This file is part of bai.tu.
+
+    bai.tu is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    bai.tu is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with bai.tu.  If not, see <http://www.gnu.org/licenses/>.;
